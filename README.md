@@ -1,18 +1,32 @@
-# 🚀 Landing Page Project
+# 🚀 FrameRush – Modern Product Landing Page
 
-A sleek and modern landing page built using **HTML**, **CSS**, **JavaScript**, and **Bootstrap** — designed to be responsive, fast, and user-friendly.
-
-## 🎨 Key Features
-
-- ✅ Fully responsive design that looks great on all screen sizes
-- 🎯 Built with **Bootstrap 5** for a clean, mobile-first layout
-- ✨ Smooth animations and transitions for a polished user experience
-- 🧠 Modular and organized code for easy maintenance and scaling
-- ⚙️ Functional components like buttons, navigation, and image handling
-- 📷 High-quality imagery and custom styles for modern branding
+**FrameRush** is a high-performance, responsive landing page designed for SaaS products, startups, and digital services. Built using HTML, CSS, JavaScript, and Bootstrap 5, it delivers an interactive and conversion-focused experience with clean visuals and smooth animations.
 
 
+![Screenshot 2025-07-08 094236](https://github.com/user-attachments/assets/cb54a996-6e05-4e5d-92ed-1968b8fb5ecd)
 
+---
 
----![Screenshot 2025-07-08 094236](https://github.com/user-attachments/assets/3c8f752e-f7bb-42fc-a535-269934d565d7)
+## 🔥 Features
 
+- 📱 **Responsive Design** — Looks clean on all devices
+- 💸 **Dynamic Pricing Toggle** — Monthly & yearly switch
+- 📖 **Plan “Read More” Sections** — Expandable feature lists
+- 📊 **Plan Comparison Modal** — Compare selected plans side-by-side with ✅ & ❌
+- 🔄 **Live Counters** — Fake subscribers & downloads simulate activity
+- ⏳ **Scroll Progress Bar** — Displays reading progress
+- 💬 **Testimonials Carousel** — Real user feedback (ok, fake users for now 😅)
+- ❓ **FAQ Accordion** — Answers to common questions
+- 📨 **Contact Form + EmailJS** — Send messages directly to your email
+- 📞 **WhatsApp CTA Button** — Start a direct chat
+- 🎬 **Smooth AOS Animations** — Clean motion effects on scroll
+
+---
+
+## 💻 Tech Stack
+
+- **HTML5**
+- **CSS3 + Bootstrap 5.3**
+- **JavaScript (Vanilla)**
+- **EmailJS** – Contact form integration
+- **AOS (Animate On Scroll)** – Scroll animations
