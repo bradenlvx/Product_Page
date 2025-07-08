@@ -1,0 +1,185 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scroll Progress Bar */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+    background-color: #0d6efd;
+    z-index: 9999;
+    transition: height 0.25s ease-out;
+    border-radius: 5px;
+}
+
+.scroll-progress-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.scroll-percent {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-bottom: 10px;
+    color: #00040a;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Smooth transitions */
+.nav-link {
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link i {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Features Icon - Blue */
+.nav-features:hover i {
+    color: #0d6efd; 
+    transform: scale(1.3);
+}
+
+/* Pricing Icon - Green */
+.nav-pricing:hover i {
+    color: #28a745; 
+    transform: scale(1.3);
+}
+
+/* Testimonials Icon - Orange */
+.nav-testimonials:hover i {
+    color: #fd7e14; 
+    transform: scale(1.3);
+}
+
+/* FAQ Icon - Red */
+.nav-faq:hover i {
+    color: #dc3545; 
+    transform: scale(1.3);
+}
+
+
+.nav-link:hover {
+    transform: scale(1.05);
+}
+
+
+.hero-section {
+    background: url('/images/pexels-ron-lach-8100065.jpg') no-repeat center center / cover;
+    position: relative;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.hero-section > div {
+    position: relative;
+    z-index: 1;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.price {
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Counts */
+#live-subscribers h1 {
+    transition: all 0.3s ease-in-out;
+}
+
+#live-subscribers h1:hover {
+    transform: scale(1.05);
+    color: #ff6f61;
+}
+
+#testimonials img {
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+    border: 3px solid #0d6efd;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item p {
+    font-style:italic;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.accordion-button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input.is-invalid, textarea.is-invalid {
+    border-color: red;
+}
+
+#formAlert {
+    transition:all 0.3s ease-in-out;
+}
+
+
+
+.footer {
+    position: sticky;
+    top: 100%;
+}
+
+.footer a {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #0d6efd; 
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe57;
+    transform: scale(1.1);
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Advanced Product Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div id="scrollProgressContainer" class="scroll-progress-container">
+    <div id="scrollProgress" class="scroll-progress"></div>
+    <span id="scrollPercent" class="scroll-percent">0%</span>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">FrameRush</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+         <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link nav-features" href="#features">
+            <i class="bi bi-gear-fill me-1"></i> Features
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link nav-pricing" href="#pricing">
+            <i class="bi bi-currency-dollar me-1"></i> Pricing
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link nav-testimonials" href="#testimonials">
+            <i class="bi bi-chat-dots-fill me-1"></i> Testimonials
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link nav-faq" href="#faq">
+            <i class="bi bi-question-circle-fill me-1"></i> FAQ
+        </a>
+    </li>
+</ul>
+ </div>
+  </div>
+   </nav>
+
+<!-- Hero Section -->
+<section class="vh-100 d-flex align-items-center justify-content-center text-center text-white hero-section" id="hero">
+    <div data-aos="fade-in">
+        <h1 class="display-3 fw-bold">FrameRush</h1>
+        <p class="lead">Next-level solution for modern problems.</p>
+        <a href="#pricing" class="btn btn-light btn-lg mt-3">Get Started</a>
+    </div>
+</section>
+
+
+<!-- Features Section -->
+<section class="container py-5" id="features">
+    <div class="text-center mb-4" data-aos="fade-up">
+        <h2 class="fw-bold"> Features</h2>
+        <p class="text-muted">Why you’ll love it.</p>
+    </div>
+    <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up">
+            <div class="card h-100 text-center p-4 shadow">
+                <h4> Fast</h4>
+                <p>Blazing fast performance out of the box.</p>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 text-center p-4 shadow">
+                <h4> Customizable</h4>
+                <p>Fully adaptable to your brand and style.</p>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 text-center p-4 shadow">
+                <h4> Reliable</h4>
+                <p>Tested and trusted for your peace of mind.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Pricing Section -->
+<section class="container py-5" id="pricing">
+    <div class="text-center mb-4" data-aos="fade-up">
+        <h2 class="fw-bold"> Pricing</h2>
+        <p class="text-muted">Simple and transparent pricing.</p>
+    </div>
+
+    <!-- Toggle Switch -->
+    <div class="text-center mb-4">
+        <label class="form-check-label me-2">Monthly</label>
+        <div class="form-check form-switch d-inline-block">
+            <input class="form-check-input" type="checkbox" id="pricingToggle">
+        </div>
+        <label class="form-check-label ms-2">Yearly</label>
+    </div>
+
+   <!-- Pricing Cards -->
+<div class="row g-4 justify-content-center">
+  <!-- Basic Plan -->
+  <div class="col-md-4" data-aos="fade-up">
+    <div class="card text-center shadow p-4">
+      <h4>Basic</h4>
+      <h2><span class="price" data-month="160" data-year="1600">R160</span><small>/mo</small></h2>
+      <p>Perfect for getting started.</p>
+      
+      <!-- Hidden details -->
+      <ul class="plan-details list-unstyled text-start d-none" id="basicDetails">
+        <li>✔️ Access to core editing tools</li>
+        <li>✔️ Export up to 720p resolution</li>
+        <li>❌ No collaboration features</li>
+        <li>❌ Limited cloud storage</li>
+      </ul>
+      
+      <button class="btn btn-link read-more-btn" data-target="basicDetails">Read More</button>
+      
+      <div class="form-check mt-3">
+        <input class="form-check-input compare-checkbox" type="checkbox" value="basic" id="compareBasic">
+        <label class="form-check-label" for="compareBasic">Compare</label>
+      </div>
+
+      <a href="#" class="btn btn-primary mt-2">Choose Plan</a>
+    </div>
+  </div>
+
+  <!-- Pro Plan -->
+  <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="card text-center shadow p-4">
+      <h4>Pro</h4>
+      <h2><span class="price" data-month="340" data-year="3400">R340</span><small>/mo</small></h2>
+      <p>Great for professionals.</p>
+      
+      <ul class="plan-details list-unstyled text-start d-none" id="proDetails">
+        <li>✔️ Everything in Basic</li>
+        <li>✔️ Export up to 1080p</li>
+        <li>✔️ Team collaboration</li>
+        <li>✔️ 50GB cloud storage</li>
+      </ul>
+
+      <button class="btn btn-link read-more-btn" data-target="proDetails">Read More</button>
+      
+      <div class="form-check mt-3">
+        <input class="form-check-input compare-checkbox" type="checkbox" value="pro" id="comparePro">
+        <label class="form-check-label" for="comparePro">Compare</label>
+      </div>
+
+      <a href="#" class="btn btn-primary mt-2">Choose Plan</a>
+    </div>
+  </div>
+
+  <!-- Enterprise Plan -->
+  <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+    <div class="card text-center shadow p-4">
+      <h4>Enterprise</h4>
+      <h2><span class="price" data-month="510" data-year="5100">R510</span><small>/mo</small></h2>
+      <p>For big teams and projects.</p>
+
+      <ul class="plan-details list-unstyled text-start d-none" id="enterpriseDetails">
+        <li>✔️ Everything in Pro</li>
+        <li>✔️ Export up to 4K</li>
+        <li>✔️ Dedicated account manager</li>
+        <li>✔️ Unlimited cloud storage</li>
+      </ul>
+
+      <button class="btn btn-link read-more-btn" data-target="enterpriseDetails">Read More</button>
+      
+      <div class="form-check mt-3">
+        <input class="form-check-input compare-checkbox" type="checkbox" value="enterprise" id="compareEnterprise">
+        <label class="form-check-label" for="compareEnterprise">Compare</label>
+      </div>
+
+      <a href="#" class="btn btn-primary mt-2">Choose Plan</a>
+    </div>
+  </div>
+</div>
+
+<!-- Compare Button -->
+<div class="text-center mt-4">
+  <button id="compareBtn" class="btn btn-outline-primary" disabled>Compare Selected Plans</button>
+</div>
+
+<!-- Compare Table Modal -->
+<div class="modal fade" id="compareModal" tabindex="-1" aria-labelledby="compareModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="compareModalLabel">Compare Plans</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-bordered text-center align-middle" id="compareTable">
+          <thead>
+            <tr>
+              <th>Features</th>
+              <!-- Plan Names inserted dynamically -->
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Feature rows inserted dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Subscribers Live Counter Section -->
+<section class="container py-5" id="live-subscribers">
+    <div class="text-center mb-4" data-aos="fade-up">
+        <h2 class="fw-bold">🚀 Live User Activity</h2>
+        <p class="text-muted">People are joining in real-time!</p>
+    </div>
+
+    <div class="d-flex justify-content-center gap-5">
+        <div class="text-center">
+            <h1 id="subscribersCount" class="display-4 fw-bold text-primary">12,500</h1>
+            <p class="text-muted">Active Subscribers</p>
+        </div>
+        <div class="text-center">
+            <h1 id="downloadsCount" class="display-4 fw-bold text-success">30,000</h1>
+            <p class="text-muted">Downloads</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Testimonials Section -->
+<section class="container py-5" id="testimonials">
+    <div class="text-center mb-4" data-aos="fade-up">
+        <h2 class="fw-bold"> What Our Users Say</h2>
+        <p class="text-muted">Real feedback from real people.</p>
+    </div>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+        <div class="carousel-inner">
+
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active text-center">
+                <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="User 1">
+                <p class="lead">"This product changed my life! Super easy to use and reliable."</p>
+                <h5>- Alex M.</h5>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="carousel-item text-center">
+                <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="User 2">
+                <p class="lead">"Excellent support and great performance. Highly recommend!"</p>
+                <h5>- Jamie L.</h5>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="carousel-item text-center">
+                <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="User 3">
+                <p class="lead">"A must-have tool for anyone serious about scaling their work."</p>
+                <h5>- Taylor K.</h5>
+            </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+
+<!-- FAQ -->
+ <!-- FAQ Section -->
+<section class="container py-5" id="faq">
+    <div class="text-center mb-4" data-aos="fade-up">
+        <h2 class="fw-bold"> Frequently Asked Questions</h2>
+        <p class="text-muted">We've got answers.</p>
+    </div>
+
+    <div class="accordion" id="faqAccordion" data-aos="fade-up">
+
+        <!-- Question 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                    What is YourProduct?
+                </button>
+            </h2>
+            <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    YourProduct is a cutting-edge solution to help you work smarter, faster, and better.
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                    How do I subscribe?
+                </button>
+            </h2>
+            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Simply select your plan in the pricing section and follow the checkout steps.
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                    Is there customer support?
+                </button>
+            </h2>
+            <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Yes! We offer 24/7 customer support via chat, email, and phone.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="container py-5" id="contact">
+    <div class="text-center mb-4" data-aos="fade-up">
+        <h2 class="fw-bold"> Contact Us</h2>
+        <p class="text-muted">We’d love to hear from you!</p>
+    </div>
+
+   <form id="contactForm" class="mx-auto" style="max-width: 600px;" data-aos="fade-up" novalidate>
+    <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" name="from_name" required>
+        <div class="invalid-feedback">Please enter your name.</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" name="from_email" required>
+        <div class="invalid-feedback">Please enter a valid email.</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        <div class="invalid-feedback">Please enter your message.</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+    <div id="formAlert" class="alert alert-success mt-3 d-none">Your message has been sent successfully!</div>
+</form>
+
+</section>
+<!-- Footer -->
+ <footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <span>&copy; 2025 YourProduct. All rights reserved.</span>
+        <div class="social-icons mt-3 mt-md-0">
+            <a href="https://facebook.com" target="_blank" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="text-white"><i class="bi bi-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+    AOS.init();
+        (function(){
+        emailjs.init("7BGRJv_dfWJEohZc7"); 
+    })();
+</script>
+<a href="https://wa.me/+270665958980" class="whatsapp-float" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+</body>
+</html>
