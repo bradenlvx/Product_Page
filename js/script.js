@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     if (isValid) {
-      emailjs.sendForm('service_rz59dma', 'template_vm7lys5', contactForm)
+       emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', contactForm)
         .then(() => {
           formAlert.classList.remove('d-none');
           formAlert.classList.replace('alert-danger', 'alert-success');
